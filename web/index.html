@@ -2,13 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Botiga de llibres</title>
+
 </head>
 <body>
-    <div class="caja">
+    <header>
+        <div class="top">
+            <div class="container"> 
+                <section class="headerTop">
+                 <!--buscador-->
+                    <div class="buscador">
+                     <form action="#">
+                         <input type="text" name="buscar" placeholder="buscar..."  >
+                         <button><i class="fas fa-search"></i></button>  
+                     </form> 
+                 </div>
+
+                 <!--user-->
+                 <div class="user">
+                     <form action="#">
+                         <input type="text" name="usuario" placeholder="usuario">
+                         <input type="password" name="password" placeholder="contraseña">
+                         <input type="button" class="registro" value="ENTRAR">
+                     </form>
+                     <a class="registro" href="#">REGISTRARSE</a>
+                 </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="container">
+            <section class="cabezera">
+                <h1><img src="img/logoETdisseny.png" alt="logotipo tienda"></h1>
+                 <nav>
+                    <ul class="menu">
+                        <li>HOME</li>
+                        <li>CATEGORIAS</li>
+                        <li>CONTACTO</li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </header> 
+    <section class="banner">
+            <img src="img/baner.jpg" alt="Compra tus mejores libros" class="img-fluid">
+            <h2 class="titBaner">Tu tienda de libros en Barcelona</h2>
+        </section>       
+    <section class="container">
+        <h2>Libros recomendados</h2>
+        <section class="boxLibros">
+            <article class="libro">
+                 <img src="img/9788408206606.jpg" alt="el mundo es un gato jugando con Australia" class="imgLibro">
+            </article>
+            <article class="libro">
+                    <img src="img/9788408206606.jpg" alt="el mundo es un gato jugando con Australia" class="imgLibro">
+            </article>
+        </section>
         
-    </div>
+
+    </section>
+    <footer>
+
+    </footer>
+    
 </body>
 </html>

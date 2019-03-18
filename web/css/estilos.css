@@ -1,0 +1,113 @@
+/* resets */
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+img{
+    vertical-align: top;
+    
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.top {
+    background-color:#f5f5f5;
+    padding: .5rem 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    
+}
+.headerTop{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.buscador button {
+    padding: .2rem;
+    background-color: #000;
+    color: #f5f5f5;
+    border:none;
+}
+
+.user{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+input{
+    padding: .2rem;
+}
+
+.registro{
+    background: #E5C72F;
+    border: none;
+    color: #000;
+    padding: .2rem .8rem;
+    margin: 0 .2rem;
+}
+a.registro{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.cabezera{
+    margin: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.menu{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+ul.menu li{
+    list-style:none;
+    margin: 1rem;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.banner{
+    position: relative;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size:3rem;
+    padding: 3rem 0;
+    margin: auto;
+    text-align: center;
+}
+h2.titBaner{
+    position: absolute;
+    top:20%;
+    left: 20%;
+    color: #fff; 
+    text-shadow: 0px 0px 8px #000;
+    font-weight: 400;
+}
+.boxLibros{
+    display: flex;
+    justify-content: space-around;
+}
+.imgLibro {
+    width: 100%;
+    max-width: 200px;
+}
+
