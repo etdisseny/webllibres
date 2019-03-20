@@ -4,17 +4,21 @@
 	padding: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    box-sizing: border-box;
 }
+
 img{
-    vertical-align: top;
-    
+    vertical-align: top;  
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 300;
+}
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .top {
@@ -26,8 +30,8 @@ body {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
-    
 }
+
 .headerTop{
     display: flex;
     justify-content: space-between;
@@ -87,17 +91,22 @@ ul.menu li{
 .banner{
     position: relative;
 }
+
 h2{
-    font-family: 'Montserrat', sans-serif;
     font-size:3rem;
     padding: 3rem 0;
     margin: auto;
     text-align: center;
 }
-h2.titBaner{
+.banner div{
     position: absolute;
-    top:20%;
-    left: 20%;
+    top:0;
+    left: 0;
+    margin:auto;
+    color: #fff; 
+}
+h2.titBaner{
+    padding-bottom: .5rem;
     color: #fff; 
     text-shadow: 0px 0px 8px #000;
     font-weight: 400;
@@ -105,9 +114,55 @@ h2.titBaner{
 .boxLibros{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
+.libro{
+    width: 250px;
+    padding: 1rem;
+    text-align: center;
+}
+.boxTitulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .imgLibro {
-    width: 100%;
+    max-height: 250px;
+    height: auto;   
+}
+
+h3 {
+    font-weight: 600; 
+    margin: 1rem auto .2rem auto; 
+    text-align: center;
+}
+.fa-shopping-cart{
+    margin-right: 1rem;
+}
+
+a.cesta{
+    display: block;
+    text-decoration: none;
+    background-color: #E5C72F;
+    color: #000;
+    text-align: center;
+    padding: .5rem 1rem;
+    margin: 1rem auto;
     max-width: 200px;
 }
 
+.boxTitulo {
+    min-height: 8rem;
+}
+.fondoSelec{
+    background-color: #ccc;
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
+.selectores{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
