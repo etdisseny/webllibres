@@ -11,16 +11,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
- 
-    <title>Botiga de llibres</title>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <title>Botiga de llibres - home</title>
 
 </head>
 <body>
     <header>
             <nav class="navbar navbar-light bg-light">
                 <div class="container">
-                    <form class="form-inline flex-nowrap">
-                      <input class="form-control form-control-sm mr-2" type="text" placeholder="Search">
+                    <form class="form-inline flex-nowrap" id="formSearch">
+                      <input id="inputSearch" class="form-control form-control-sm mr-2" type="text" placeholder="Search">
                       <button class="btn btn-sm btn-outline-secondary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
                     </form>
                     <form class="form-inline mt-2 ">
@@ -41,8 +41,8 @@
                                 Remember me
                               </label>
                             </div>
-                          
                             <button type="submit" class="btn btn-sm btn-primary mb-2">Entrar</button>
+                            <a href="registro.html" class=" ml-2 btn btn-sm btn-primary mb-2">Registrarse</a>
                           </form>
                         </div>
             </nav>
@@ -117,7 +117,7 @@
         <h2 class="my-4">Libros recomendados</h2>
         <section class="row">
 
-            <article class=" col-6 col-md-3 p-1">
+            <article class=" col-6 col-lg-3 p-1">
                 <div class="card" >
                     <img src="img/9788408206606.jpg" alt="el mundo es un gato jugando con Australia" class=" card-img-top img-fluid">    
                     <div class="card-body">
@@ -129,7 +129,7 @@
                 </div>  
             </article>
 
-            <article class=" col-6 col-md-3 p-1">
+            <article class=" col-6 col-lg-3 p-1">
                 <div class="card" >
                     <img src="img/9788417247188.jpg" alt="Fredie Mercury biografia" class="img-fluid">    
                      <div class="card-body">
@@ -141,7 +141,7 @@
                 </div>  
             </article>
 
-            <article class=" col-6 col-md-3 p-1">
+            <article class=" col-6 col-lg-3 p-1">
                 <div class="card" >
                     <img src="img/9788420434797.jpg" alt="la tierra desnuda" class="img-fluid">    
                     <div class="card-body">
@@ -153,7 +153,7 @@
                 </div>  
             </article>
 
-            <article class=" col-6 col-md-3 p-1">
+            <article class=" col-6 col-lg-3 p-1">
                 <div class="card" >
                     <img src="img/9788432234958.jpg" alt="dia sin ti" class="img-fluid">    
                     <div class="card-body">
@@ -200,7 +200,7 @@
             <h2 class="my-4">Libros recomendados</h2>
             <section class="row">
     
-                <article class=" col-6 col-md-3 p-1">
+                <article class=" col-6 col-lg-3 p-1">
                     <div class="card" >
                         <img src="img/9788408206606.jpg" alt="el mundo es un gato jugando con Australia" class=" card-img-top img-fluid">    
                         <div class="card-body">
@@ -212,7 +212,7 @@
                     </div>  
                 </article>
     
-                <article class=" col-6 col-md-3 p-1">
+                <article class=" col-6 col-lg-3 p-1">
                     <div class="card" >
                         <img src="img/9788417247188.jpg" alt="Fredie Mercury biografia" class="img-fluid">    
                          <div class="card-body">
@@ -224,7 +224,7 @@
                     </div>  
                 </article>
     
-                <article class=" col-6 col-md-3 p-1">
+                <article class=" col-6 col-lg-3 p-1">
                     <div class="card" >
                         <img src="img/9788420434797.jpg" alt="la tierra desnuda" class="img-fluid">    
                         <div class="card-body">
@@ -236,7 +236,7 @@
                     </div>  
                 </article>
     
-                <article class=" col-6 col-md-3 p-1">
+                <article class=" col-6 col-lg-3 p-1">
                     <div class="card" >
                         <img src="img/9788432234958.jpg" alt="dia sin ti" class="img-fluid">    
                         <div class="card-body">

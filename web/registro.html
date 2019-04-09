@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <title>Botiga de llibres - home</title>
+
+</head>
+<body>
+    <header>
+            <nav class="navbar navbar-light bg-light">
+                <div class="container">
+                    <form class="form-inline flex-nowrap" id="formSearch">
+                      <input id="inputSearch" class="form-control form-control-sm mr-2" type="text" placeholder="Search">
+                      <button class="btn btn-sm btn-outline-secondary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                    <form class="form-inline mt-2 ">
+                            <label class="sr-only" for="inlineFormInputName2">Name</label>
+                            <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="name">
+                          
+                            <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+                            <div class="input-group input-group-sm mb-2 mr-sm-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                              </div>
+                              <input type="text" class="form-control form-control-sm" id="inlineFormInputGroupUsername2" placeholder="Username">
+                            </div>
+                          
+                            <div class="form-check mb-2 mr-sm-2">
+                              <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                              <label class="form-check-label" for="inlineFormCheck">
+                                Remember me
+                              </label>
+                            </div>
+                            <button type="submit" class="btn btn-sm btn-primary mb-2">Entrar</button>
+                            <a href="registro.html" class=" ml-2 btn btn-sm btn-primary mb-2">Registrarse</a>
+                          </form>
+                        </div>
+            </nav>
+       
+
+        <div class="container mt-3">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                        <a class="navbar-brand" href="#"><h1><img src="img/logoETdisseny.png" alt="logotipo tienda"></h1></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                              <a class="nav-link text-center" href="#">HOME <span class="sr-only"></span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-center" href="#">CATEGORIAS</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-center" href="#">CONTACTO</a>
+                            </li>
+                          </ul>
+                         
+                        </div>
+                      </nav>
+
+
+
+
+        </div>
+    </header> 
+    <section class="container">
+
+    
+    <form action="#" class="needs-validation" novalidate>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre"  required>
+            <div class="validation">
+              
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="apellido">Apellido</label>
+            <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido"  required>
+            <div class="aviso valid-feedback">
+              Dato correcto
+            </div>
+          </div>
+          
+        </div>
+        <div class="form-row">
+            <div class="col-md-3 mb-3">
+              <label for="usuario">Usuario</label>
+                <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                Por favor, añade un Nombre de usuario.
+                </div>
+           </div>
+          <div class="col-md-3 mb-3">
+            <label for="contra">Contraseña</label>
+            <input type="password" class="form-control" name="contra" id="contra" placeholder="contraseña" required>
+            <div class="invalid-feedback">
+              Por favor, añade una contraseña
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="contraRep">Repetir contraseña</label>
+            <input type="password" class="form-control" name="contraRep" id="contraRep" placeholder="Contraseña" required>
+            <div class="invalid-feedback">
+              Por favor, repite la contraseña
+            </div>
+          </div>
+         
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Acepto terminos y condiciones
+            </label>
+            <div class="invalid-feedback">
+              Debes aceptar las condiciones antes de enviar.
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">ENVIAR</button>
+      </form>
+    </section> 
+   
+
+
+    
+    <footer class="mt-4">
+        <section class="bg-dark py-4">
+            <div class="container text-light">
+                <div class="row">
+                    <div class="col-12 col-sm-8">
+                        <img src="img/logoETdisseny.png" alt="etdisseny" width="150">
+                        <div>Todos los libros que te puedas imaginar a tu alcance y a un precio muy 
+                            económico, en el centro de Barcelona.
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+                            <div>
+                                <i class="fas fa-mobile-alt"></i> 93 123 34 56 67
+                            </div> 
+                            <div>
+                                <i class="fas fa-map-marker-alt"></i>
+                                C/Aribau, 54 <br>
+                                Barcelona 08004
+                            </div>
+                            <div>
+                                <i class="far fa-envelope"></i>email@hotmail.com
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg-warning py-2">
+            <div class="container text-center">
+                <a href="#" class="text-dark">Aviso Legal</a>   - <a href="#" class="text-dark">Politica de privacidad</a> - Etdisseny2019
+            </div>
+        </section>
+            
+        
+        
+
+    </footer>
+
+ 
+  
+     
+</body>
+</html>
