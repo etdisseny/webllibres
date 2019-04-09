@@ -41,8 +41,8 @@
                                 Remember me
                               </label>
                             </div>
-                            <button type="submit" class="btn btn-sm btn-primary mb-2">Entrar</button>
-                            <a href="registro.html" class=" ml-2 btn btn-sm btn-primary mb-2">Registrarse</a>
+                            <button type="submit" class="btn btn-sm btn-danger mb-2">Entrar</button>
+                            <a href="registro.html" class=" ml-2 btn btn-sm btn-danger mb-2">Registrarse</a>
                           </form>
                         </div>
             </nav>
@@ -50,15 +50,15 @@
 
         <div class="container mt-3">
                 <nav class="navbar navbar-expand-lg navbar-light ">
-                        <a class="navbar-brand" href="#"><h1><img src="img/logoETdisseny.png" alt="logotipo tienda"></h1></a>
+                        <a class="navbar-brand" href="index.html"><img src="img/logoETdisseny.png" alt="logotipo tienda" width="180"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>
                       
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                          <ul class="navbar-nav mr-auto">
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                          <ul class="navbar-nav ">
                             <li class="nav-item active">
-                              <a class="nav-link text-center" href="#">HOME <span class="sr-only"></span></a>
+                              <a class="nav-link text-center" href="index.html">HOME <span class="sr-only"></span></a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link text-center" href="#">CATEGORIAS</a>
@@ -78,21 +78,21 @@
     </header> 
     <section class="container">
 
-    
+    <h1>FORMULARIO DE REGISTRO</h1>
     <form action="#" class="needs-validation" novalidate>
         <div class="form-row">
           <div class="col-md-4 mb-3">
             <label for="nombre">Nombre</label>
             <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre"  required>
-            <div class="validation">
+            <div class="validNombre">
               
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <label for="apellido">Apellido</label>
             <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido"  required>
-            <div class="aviso valid-feedback">
-              Dato correcto
+            <div class="validApellido">
+              
             </div>
           </div>
           
@@ -101,22 +101,22 @@
             <div class="col-md-3 mb-3">
               <label for="usuario">Usuario</label>
                 <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Username" aria-describedby="inputGroupPrepend" required>
-                <div class="invalid-feedback">
-                Por favor, añade un Nombre de usuario.
+                <div class="validUser">
+                
                 </div>
            </div>
           <div class="col-md-3 mb-3">
             <label for="contra">Contraseña</label>
             <input type="password" class="form-control" name="contra" id="contra" placeholder="contraseña" required>
-            <div class="invalid-feedback">
-              Por favor, añade una contraseña
+            <div class="validPass">
+             
             </div>
           </div>
           <div class="col-md-3 mb-3">
-            <label for="contraRep">Repetir contraseña</label>
-            <input type="password" class="form-control" name="contraRep" id="contraRep" placeholder="Contraseña" required>
-            <div class="invalid-feedback">
-              Por favor, repite la contraseña
+            <label for="contra2">Repetir contraseña</label>
+            <input type="password" class="form-control" name="contra2" id="contra2" placeholder="Contraseña" required>
+            <div class="validPass2">
+              
             </div>
           </div>
          
@@ -132,7 +132,7 @@
             </div>
           </div>
         </div>
-        <button class="btn btn-primary" type="submit">ENVIAR</button>
+        <button class="btn btn-danger" type="submit">ENVIAR</button>
       </form>
     </section> 
    

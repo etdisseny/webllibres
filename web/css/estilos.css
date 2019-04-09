@@ -14,3 +14,11 @@
 .carousel-caption{
     bottom: 30%;
 }
+.invalid-feeback{
+    color:#C82333;
+    font-size: .7rem;
+}
+.valid-feeback{
+    color:#2DB3A8;
+    font-size: .7rem;
+}
