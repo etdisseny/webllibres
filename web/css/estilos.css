@@ -14,11 +14,25 @@
 .carousel-caption{
     bottom: 30%;
 }
-.invalid-feeback{
-    color:#C82333;
-    font-size: .7rem;
+.boxContent{
+    position: relative;
 }
-.valid-feeback{
+.boxAlert, .nombre, .email{
+    position: absolute;
+    padding: .3rem;
+    background-color: white;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    top:30px;
+    z-index: 1;
+   display: none; 
+}
+.is-invalid{
+    color:#C82333;
+    font-size: .8rem;
+   
+}
+.is-valid{
     color:#2DB3A8;
-    font-size: .7rem;
+    font-size: .8rem;
 }
