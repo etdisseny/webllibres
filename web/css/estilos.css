@@ -14,7 +14,7 @@
 .carousel-caption{
     bottom: 30%;
 }
-.boxContent{
+.boxContentSearch .boxContent{
     position: relative;
 }
 .boxAlert, .nombre, .email{
@@ -23,7 +23,7 @@
     background-color: white;
     border:1px solid #ccc;
     border-radius: 5px;
-    top:30px;
+    top:40px;
     z-index: 1;
    display: none; 
 }

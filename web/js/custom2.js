@@ -18,7 +18,7 @@ window.addEventListener('load', function(){
     //validación formulario search
 
     formSearch.addEventListener('submit', function(e){
-        event.preventDefault(e);//nos eviat el envio va lo primero
+        event.preventDefault(e);//nos evita el envio va lo primero
         clearErrors(boxAlert, 'is-invalid','is-valid'); //borrar errores
         //creo todas las variables que necesito
         var formSearch= document.querySelector('#formSearch');
@@ -37,50 +37,66 @@ window.addEventListener('load', function(){
 
      //Validacion del formulario de registro (de una vez...)
      
-    
-     
-     var formularioRegistro= document.querySelector('#formularioRegistro');
-    
 
-    function validarCorreo(valor){
-        if( /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(valor)){
-          alert('la direccion ' + valor + ' es correcta');
-          return true;
-        
-         }else{
+    var formularioRegistro= document.querySelector('#formularioRegistro');
+
+
+    function validarCorreo(valor){ 
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(valor)) {
+            alert('la direccion ' + valor + ' es correcta');
+            return true;
+        } else {
             alert('la direccion ' + valor + ' es incorrecta');
             return false;
-         }
+        }
     }
 
 
-      function validarFormulario(event){
-        event.preventDefault();
-        var sinErrores= true;
- 
 
-        for(var i=0 ; i<formularioRegistro.length; i++){
-            if(formularioRegistro[i].type=='text'){//solo los campos tipo text
 
-              if(formularioRegistro[i].value=='null'|| formularioRegistro[i].value.length==0 ){
-         
-                 alert(formularioRegistro[i].name + ' el campo no puede estar vacio');
+
+
+    function validarFormulario(event) {
+        event.preventDefault();//evitar envio
+        var sinErrores = true;
+
+        for (var i = 0; i < formularioRegistro.length; i++) {
+
+            var clase=formularioRegistro[i].name;//creo una clase que coincide con el name del input
+            var boxContent=document.getElementsByClassName('boxContentReg');
+            var div = document.createElement('div');//creo elemto
+            div.classList.add(clase);//le doy clase que coincida con el nombre el input
+
+            if (formularioRegistro[i].type == 'text') { //solo los campos tipo text
+
+                if (formularioRegistro[i].value == 'null' || formularioRegistro[i].value.length == 0) {
                     
-                    if(formularioRegistro[i].name=='email'){
+
+                    div.innerHTML='el Campo no puede estar vacio';
+                    boxContent[i].append(div);
+                    div.style.display="block";
+
+
+                    if (formularioRegistro[i].name == 'email') {
                         validarCorreo(formularioRegistro[i].value);
                     }
-   
-                   sinErrores=false;
-                   return sinErrores;
 
-                   
+                    sinErrores = false;
+                    return sinErrores;
+
+                }else{
+
+                  
+                    clase.style.display="none";
                 }
             }
         }
-         if(sinErrores==true){formularioRegistro.submit();}
-      } 
+        if (sinErrores == true) {
+            formularioRegistro.submit();
+        }
+    }
 
-      formularioRegistro.addEventListener('submit', validarFormulario);
+    formularioRegistro.addEventListener('submit', validarFormulario);
 
 
 
