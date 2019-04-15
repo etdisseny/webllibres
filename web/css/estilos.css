@@ -14,19 +14,7 @@
 .carousel-caption{
     bottom: 30%;
 }
-.boxContentSearch .boxContent{
-    position: relative;
-}
-.boxAlert{
-    position: absolute;
-    padding: .3rem;
-    background-color: white;
-    border:1px solid #ccc;
-    border-radius: 5px;
-    top:40px;
-    z-index: 1;
-   display: none; 
-}
+
 .is-invalid{
     color:#C82333;
     font-size: .8rem;

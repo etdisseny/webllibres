@@ -14,17 +14,19 @@ window.addEventListener('load', function(){
         nombre.innerHTML= "";
     }
     
-    var boxAlert=document.querySelector('.boxAlert');
+    
     //validación formulario search
+
+    var boxAlert=document.querySelector('.boxAlert');
 
     formSearch.addEventListener('submit', function(e){
         event.preventDefault(e);//nos evita el envio va lo primero
-        clearErrors(boxAlert, 'is-invalid','is-valid'); //borrar errores
+        clearErrors(boxAlert, 'is-invalid'); //borrar errores
         //creo todas las variables que necesito
-        var formSearch= document.querySelector('#formSearch');
+        
         var iSearch=document.querySelector('#inputSearch').value;
        
-        if(iSearch.trim() =="null" || iSearch.trim().length <3){
+        if(iSearch.trim() ==null || iSearch.trim().length <3){
             boxAlert.style.display='block';
             claseNew(boxAlert,'is-invalid','El campo debe contener almenos 3 caractéres');
             return false;
@@ -38,7 +40,7 @@ window.addEventListener('load', function(){
      //Validacion del formulario de registro (de una vez...)
      
 
-    var formularioRegistro= document.querySelector('#formularioRegistro');
+    
 
 
     function validarCorreo(valor){ 
@@ -53,18 +55,18 @@ window.addEventListener('load', function(){
 
     function validarFormulario(event) {
         event.preventDefault();//evitar envio
-        
         var formularioRegistro= document.querySelector('#formularioRegistro');
         var nombre=document.querySelector('#nombre').value; 
         var email=document.querySelector('#email').value; 
-        var errores=0;
+        var sinErrores = true;
 
         var boxErrores = document.querySelector('#boxErrores');
         clearErrors(boxErrores, 'is-invalid');
         //validar nombre
             if (nombre == null || nombre.length == 0) { 
                 claseNew(boxErrores,'is-invalid','el campo nombre no puede estar vacio');    
-                    errores++;
+                sinErrores = false;
+                return sinErrores;
                     
                 }else{
                     boxErrores.style.display="none";  
@@ -76,20 +78,24 @@ window.addEventListener('load', function(){
             if (email == null || email.length == 0) { 
                 boxErrores.style.display="block";  
                 claseNew(boxErrores,'is-invalid','el campo email no puede estar vacio');    
-                    errores++;
+                sinErrores = false;
+                return sinErrores;
+
                 }else{
-                    if( validarCorreo(email)){
-                        claseNew(boxErrores,'is-invalid','el correo no es correcto');
-                        errores++;
-                    }else{
-                        boxErrores.style.display="none"; 
+
+                   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(email) ){
+                        boxErrores.style.display="none";  
+                    } else {
+                        boxErrores.style.display="block"; 
+                        claseNew(boxErrores,'is-invalid','el correo no es correcto');    
+                        sinErrores = false;
+                        return sinErrores;
                     }
-                      
+                    
                 }
-           
-            ;
+   
        
-        if (errores==0) {
+        if (sinErrores == true) {
             formularioRegistro.submit();
         }
     }
