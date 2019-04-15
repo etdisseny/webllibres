@@ -11,7 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
-    <script type="text/javascript" src="js/custom3.js"></script>
+    <script type="text/javascript" src="js/custom2.js"></script>
     <title>Botiga de llibres - home</title>
 
 </head>
@@ -28,15 +28,17 @@
                       </div>
                     </form>
 
-                    <div class="d-flex flex-column">
                   <form action="#" class="form-inline mt-2" id="formularioRegistro">
-                    
-                        <label class="sr-only" for="nombre">Name</label>
-                        <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="nombre" name="nombre" placeholder="name">
-                        
-                        <label class="sr-only" for="email">Email</label>
-                        <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="email" name="email" placeholder="Email">
-                        
+                    <div class="boxContentReg boxContent0">
+                      <label class="sr-only" for="nombreid">Name</label>
+                      <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="nombreid" name="nombre" placeholder="name">
+                    </div>
+
+                    <div class="boxContentReg boxContent1 ">
+                      <label class="sr-only" for="emailid">Email</label>
+                      <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="emailid" name="email" placeholder="Email">
+                    </div>
+     
                     <div class="form-check mb-2 mr-sm-2">
                       <input class="form-check-input" type="checkbox" id="inlineFormCheck">
                       <label class="form-check-label" for="inlineFormCheck">
@@ -46,8 +48,6 @@
                     <button type="submit" class="btn btn-sm btn-danger mb-2">Entrar</button>
                     <a href="registro.html" class=" ml-2 btn btn-sm btn-danger mb-2">Registrarse</a>
                   </form>
-                  <div id="boxErrores"></div>
-                  </div>
                 
                 
               </div>

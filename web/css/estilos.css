@@ -17,7 +17,7 @@
 .boxContentSearch .boxContent{
     position: relative;
 }
-.boxAlert, .nombre, .email{
+.boxAlert{
     position: absolute;
     padding: .3rem;
     background-color: white;
