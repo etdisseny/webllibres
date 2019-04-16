@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
     <!--plugin validacion formularios-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <script type="text/javascript" src="js/custom-jquery.js"></script>
-    
+   
     <title>Botiga de llibres - home</title>
 
 </head>
@@ -81,78 +81,64 @@
     <section class="container">
 
     <h1>FORMULARIO DE REGISTRO</h1>
-    <form action="#" >
+    <form action="#" method="POST" id='form_contanct' >
         <div class="form-row">
           <div class="col-md-3 mb-3">
             <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" data-validation="alphanumeric"  >
-            <div class="validForm validNombre">
-              
-            </div>
+            <input type="text" class="form-control" name="nombre"  placeholder="Nombre" data-validation="alphanumeric"  >
+            
           </div>
           <div class="col-md-3 mb-3">
             <label for="apellido">Apellido</label>
-            <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido" data-validation="alphanumeric" >
-            <div class="validForm validApellido">
-              
-            </div>
+            <input type="text" class="form-control" name="apellido"  placeholder="Apellido" data-validation="alphanumeric" >
+            
           </div>
           <div class="col-md-3 mb-3">
 
 
             <label for="provincia">Provincia</label>
 
-            <select class="form-control" name="provincia" id="provincia" >
+            <select class="form-control" name="provincia"  data-validation="required">
                 <option value='' selected>Elegir provincia...</option>
                 <option value="Barcelona">Barcelona</option>
                 <option value="Tarragona">Tarragona</option>
                 <option value="Lleida">Lleida</option>
                 <option value="Girona">Girona</option>
             </select>
-            <div class="validForm validProvincia">
-              
-            </div>
+            
           </div>
           
         </div>
         <div class="form-row">
             <div class="col-md-3 mb-3">
               <label for="usuario">Usuario</label>
-                <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Email" aria-describedby="inputGroupPrepend" >
-                <div class="validForm validUser">
+                <input type="text" class="form-control" name="usuario"  placeholder="Email" data-validation="email">
                 
-                </div>
            </div>
           <div class="col-md-3 mb-3">
             <label for="contra">Contraseña</label>
-            <input type="password" class="form-control" name="contra" id="contra" placeholder="contraseña" >
-            <div class="validForm validPass">
-             
-            </div>
+            <input type="password" class="form-control" name="pass_confirmation" data-validation="length" data-validation-length="min8" placeholder="contraseña" >
+            
           </div>
           <div class="col-md-3 mb-3">
             <label for="contra2">Repetir contraseña</label>
-            <input type="password" class="form-control" name="contra2" id="contra2" placeholder="Contraseña">
-            <div class="validForm validPass2">
-              
-            </div>
+            <input type="password" class="form-control" name="pass" data-validation="confirmation" placeholder="Contraseña">
+            
           </div>
          
         </div>
         <div class="form-group">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" >
-            <label class="form-check-label" for="invalidCheck">
-              Acepto terminos y condiciones
-            </label>
-            <div class="invalid-feedback">
-              Debes aceptar las condiciones antes de enviar.
-            </div>
+              <input type="checkbox" class="form-check-input" data-validation="required" 
+              data-validation-error-msg="Debes aceptar las condiciones antes de enviar.">
+              Acepto <a href="..." target="_blank">terminos y condiciones</a>
+
           </div>
         </div>
         <button class="btn btn-danger" type="submit">ENVIAR</button>
       </form>
     </section> 
+   
    
 
 

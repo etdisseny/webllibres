@@ -120,10 +120,17 @@ window.addEventListener('load', function(){
     formularioRegistro.addEventListener('submit', validarFormularioRegistro);
 
 
+    $.validate({
+        lang:'es'
 
-    
+
+      });
 
 });//final del Load
+
+
+
+
 
 
 
