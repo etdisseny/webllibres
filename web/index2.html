@@ -11,7 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
-    <script type="text/javascript" src="js/custom2.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
     <title>Botiga de llibres - home</title>
 
 </head>
@@ -19,26 +19,24 @@
     <header>
             <nav class="navbar navbar-light bg-light">
                 <div class="container">
-                  
-                    <form action="#" class="form-inline flex-nowrap" id="formSearch">
-                      <div class="boxContentSearch ">
-                        <input id="inputSearch" name="inputSearch" class="form-control form-control-sm mr-2" type="text" placeholder="Search">
-                        <button class="btn btn-sm btn-outline-secondary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-                        <div class="boxAlert"></div>
-                      </div>
+                  <div class="d-flex flex-column">
+                      <form action="#" class="form-inline  flex-nowrap" id="formSearch">
+                        <input id="inputSearch" name="inputSearch" class="form-control form-control-sm mr-2 my-2" type="text" placeholder="Search">
+                        <button class="btn btn-sm btn-outline-secondary my-2 mb-2" type="submit"><i class="fas fa-search"></i></button>
                     </form>
+                    <div class="boxAlert"></div>
+                  </div>
+                    
 
+                    <div class="d-flex flex-column">
                   <form action="#" class="form-inline mt-2" id="formularioRegistro">
-                    <div class="boxContentReg boxContent0">
-                      <label class="sr-only" for="nombreid">Name</label>
-                      <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="nombreid" name="nombre" placeholder="name">
-                    </div>
-
-                    <div class="boxContentReg boxContent1 ">
-                      <label class="sr-only" for="emailid">Email</label>
-                      <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="emailid" name="email" placeholder="Email">
-                    </div>
-     
+                    
+                        <label class="sr-only" for="nombre">Name</label>
+                        <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="nombre" name="nombre" placeholder="name">
+                        
+                        <label class="sr-only" for="email">Email</label>
+                        <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="email" name="email" placeholder="Email">
+                        
                     <div class="form-check mb-2 mr-sm-2">
                       <input class="form-check-input" type="checkbox" id="inlineFormCheck">
                       <label class="form-check-label" for="inlineFormCheck">
@@ -48,6 +46,8 @@
                     <button type="submit" class="btn btn-sm btn-danger mb-2">Entrar</button>
                     <a href="registro.html" class=" ml-2 btn btn-sm btn-danger mb-2">Registrarse</a>
                   </form>
+                  <div id="boxErrores"></div>
+                  </div>
                 
                 
               </div>
