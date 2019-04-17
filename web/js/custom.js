@@ -99,16 +99,7 @@ window.addEventListener('load', function(){
                     sinErrores = false;
                     return sinErrores;
                    }
-
-                   /*if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(email) ){
-                        boxErrores.style.display="none";  
-                    } else {
-                        boxErrores.style.display="block"; 
-                        claseNew(boxErrores,'is-invalid','el correo no es correcto');    
-                        sinErrores = false;
-                        return sinErrores;
-                    }*/
-                    
+   
                 }
    
        
@@ -119,12 +110,9 @@ window.addEventListener('load', function(){
 
     formularioRegistro.addEventListener('submit', validarFormularioRegistro);
 
-
-
    //Validacion formulario de registro
    var forValidation= document.querySelector('.needs-validation');
 
-    
    
     forValidation.addEventListener('submit', function(event){
         event.preventDefault();
@@ -199,9 +187,6 @@ window.addEventListener('load', function(){
                }
 
 
-
-
-         //claseNew(validUser, 'valid-feedback', 'El usuario es correcto');
         }
 
         //validar contraseña
@@ -236,9 +221,7 @@ window.addEventListener('load', function(){
               return true;
                
             }
-            
-      
-       
+
     });
     
 
